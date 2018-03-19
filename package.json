@@ -1,0 +1,45 @@
+{
+  "name": "adonis-vue",
+  "version": "4.1.0",
+  "adonis-version": "4.1.0",
+  "description": "This is the fullstack boilerplate for AdonisJs with Vue.js, it comes pre-configured with Vuex and Vue-routing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node ace test",
+    "fdev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "fwatch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "fhot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "fproduction": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis-app",
+    "adonis-vue"
+  ],
+  "author": "Jasper Staats",
+  "license": "UNLICENSED",
+  "private": false,
+  "dependencies": {
+    "@adonisjs/ace": "^5.0.1",
+    "@adonisjs/auth": "^3.0.4",
+    "@adonisjs/bodyparser": "^2.0.2",
+    "@adonisjs/cors": "^1.0.5",
+    "@adonisjs/fold": "^4.0.7",
+    "@adonisjs/framework": "^5.0.5",
+    "@adonisjs/ignitor": "^2.0.6",
+    "@adonisjs/lucid": "^5.0.3",
+    "@adonisjs/session": "^1.0.23",
+    "@adonisjs/shield": "^1.0.6",
+    "laravel-mix": "^2.1.8"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "autoload": {
+    "App": "./app"
+  }
+}

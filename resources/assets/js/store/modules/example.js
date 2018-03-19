@@ -1,0 +1,39 @@
+import example from '../../api/example'
+
+// initial state
+const state = {
+    all: []
+}
+
+// getters
+const getters = {
+    allProducts: state => state.all
+}
+
+// actions
+const actions = {
+    getAllProducts ({ commit }) {
+        example.getProducts(products => {
+            commit('setProducts', products)
+        })
+    }
+}
+
+// mutations
+const mutations = {
+    setProducts (state, products) {
+        state.all = products
+    },
+
+    decrementProductInventory (state, { id }) {
+        const product = state.all.find(product => product.id === id)
+        product.inventory--
+    }
+}
+
+export default {
+    state,
+    getters,
+    actions,
+    mutations
+}
