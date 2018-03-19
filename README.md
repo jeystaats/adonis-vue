@@ -1,4 +1,6 @@
 # AdonisVue
+A simple basic combination for setting up adonisjs + vue in combination with Laravel mix
+
 Personally I love simplicity and sometimes I feel like a lot of webpack templates are diverting away from that idea.
 That's why I found this lovely combination where you have a combination of simplicity by Laravel Mix.
 
@@ -47,4 +49,5 @@ Run the following command to run startup migrations.
 ```js
 adonis migration:run
 ```
+
 
